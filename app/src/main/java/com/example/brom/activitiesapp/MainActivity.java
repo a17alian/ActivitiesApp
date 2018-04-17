@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -35,15 +36,20 @@ public class MainActivity extends AppCompatActivity {
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                String toast = "Name: " + mountainNames[position] + '\n' +"Location: " + mountainLocations[position] + '\n' + "Height: " + mountainHeights[position];
-                Toast.makeText(MainActivity.this, toast, Toast.LENGTH_SHORT).show();
+                // INTENT
                 Intent intent = new Intent(getApplicationContext(), MountainDetailsActivity.class);
-
+                intent.putExtra("mountainLocations", mountainLocations[position]);
+                intent.putExtra("mountainNames", mountainNames[position]);
+                int heights = mountainHeights[position];
+                String mountainHeights = Integer.toString(heights);
+                intent.putExtra("mountainHeights", mountainHeights);
                 startActivity(intent);
             }
         });
 
         myListView.setAdapter(adapter);
+
+
         // 2. Create a new activity named "MountainDetailsActivity
 
         // 3. Create a new Layout file for the MountainDetailsActivity called
