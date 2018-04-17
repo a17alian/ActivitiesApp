@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">a17alian - assignment3</string>
-    <string name="title_activity_mountain_details">MountainDetailsActivity</string>
-    <string name="text"> HEJ</string>
+    <string name="title_activity_mountain_details">a17alian - assignment3</string>
 
 </resources>

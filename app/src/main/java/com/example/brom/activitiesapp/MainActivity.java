@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 // INTENT
                 Intent intent = new Intent(getApplicationContext(), MountainDetailsActivity.class);
                 intent.putExtra("mountainLocations", mountainLocations[position]);
+
                 intent.putExtra("mountainNames", mountainNames[position]);
                 int heights = mountainHeights[position];
                 String mountainHeights = Integer.toString(heights);

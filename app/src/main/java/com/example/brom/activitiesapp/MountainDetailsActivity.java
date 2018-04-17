@@ -25,7 +25,7 @@ public class MountainDetailsActivity extends AppCompatActivity {
         String heights = intent.getStringExtra("mountainHeights");
 
         TextView myTextView = (TextView)findViewById(R.id.myTextView);
-        myTextView.setText(names + '\n' + locations + '\n' +heights);
+        myTextView.setText("Namn: " + names + '\n' + "Plats: "+ locations + '\n' + "Höjd: "+ heights);
     }
 
 }

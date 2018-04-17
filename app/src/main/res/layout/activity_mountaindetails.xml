@@ -21,6 +21,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
+
     <android.support.v7.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
@@ -40,10 +41,18 @@
                 android:textSize="24sp"
                 android:paddingTop="24dp"
                 android:paddingRight="16dp"
+                android:textColor="#000000"
                 android:paddingLeft="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Berg" />
+                android:text="Du har valt ett berg" />
+            <TextView
+                android:id="@+id/sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:text="Information över berget du valt" />
 
             <TextView
                 android:id="@+id/myTextView"
@@ -51,6 +60,10 @@
                 android:layout_height="match_parent"
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:height="48dp"
                 />
 
         </LinearLayout>
